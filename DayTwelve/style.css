@@ -61,11 +61,14 @@ body{
     cursor: pointer;
 }
 
+.item-1 {
+    grid-area: myArea;
+}
+
 .images {
     display: grid;
-    grid-auto-flow: dense;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    grid-template-areas: 'myArea . . ';
+    grid-gap: 10px;
 }
 
 .images div {
