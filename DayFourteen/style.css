@@ -59,7 +59,7 @@ body{
     border-radius: 30px;
     padding:10px 20px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .item-1 {
@@ -94,7 +94,7 @@ body{
 }
 
 
-@media screen and (max-width: 360px) {
+@media  (max-width: 390px) {
     body {
         display: flex;
         flex-direction: column;
@@ -119,9 +119,14 @@ body{
         font-size: 10px;
     }
     
+    .images {
+        display: grid;
+        grid-template-areas: 'myArea .';
+    }
+    
 }
 
-@media screen and (min-width: 428px) {
+@media (width: 428px) {
     body {
         display: flex;
         flex-direction: column;
@@ -148,9 +153,10 @@ body{
 
 }
 
-@media screen and (min-width: 320px) {
+@media  (max-width: 320px) {
     .terms ul li {
         font-size: .5rem;
+        padding: 5px 10px;
     }
 
     .images {
