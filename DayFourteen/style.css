@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+    display: grid;
+    place-items: center;
+    
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    margin: 20px;
+    row-gap: 40px;
+}
+
+.header .navbar .list {
+    display: flex;
+    background-color: blueviolet;
+    gap: 50px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+.list li a{
+    color: white; 
+    cursor: pointer;
+}
+
+.section {
+    display: grid;
+    place-items: center;
+    row-gap: 40px;
+    width: 80%;
+}
+
+.section .brand h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.terms ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.terms ul li{
+    background-color: #ddd6d6;
+    border-radius: 30px;
+    padding:10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.item-1 {
+    grid-area: myArea;
+}
+
+.images {
+    display: grid;
+    grid-template-areas: 'myArea . . ';
+    grid-gap: 10px;
+}
+
+.images div {
+    height: 150px;
+    border: 2px solid black;
+    
+}
+
+.images div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+ 
+}
+
+.footer {
+    background-color: #ddd6d6;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width: 360px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .section .brand h1 {
+        font-size: 1.3rem;
+    }
+
+    .terms ul li {
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (min-width: 428px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section {
+        width: 100%;
+    }
+
+    .section .brand h1 {
+        font-size: 2.4rem;
+    }
+
+    .terms ul li{
+        font-size: .8rem;
+    }
+
+    .images {
+        display: grid;
+        grid-template-areas: 'myArea .';
+    }
+
+}
+
+@media screen and (min-width: 320px) {
+    .terms ul li {
+        font-size: .5rem;
+    }
+
+    .images {
+        display: grid;
+        grid-template-areas: 'myArea';
+    }
+}
