@@ -60,6 +60,7 @@ body{
     padding:10px 20px;
     cursor: pointer;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .item-1 {
@@ -94,39 +95,8 @@ body{
 }
 
 
-@media  (max-width: 390px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
 
-    }
-
-    .section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-
-    .section .brand h1 {
-        font-size: 1.3rem;
-    }
-
-    .terms ul li {
-        font-size: 10px;
-    }
-    
-    .images {
-        display: grid;
-        grid-template-areas: 'myArea .';
-    }
-    
-}
-
-@media (width: 428px) {
+@media (max-width: 428px) {
     body {
         display: flex;
         flex-direction: column;
@@ -139,23 +109,11 @@ body{
     }
 
     .section .brand h1 {
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 
     .terms ul li{
         font-size: .8rem;
-    }
-
-    .images {
-        display: grid;
-        grid-template-areas: 'myArea .';
-    }
-
-}
-
-@media  (max-width: 320px) {
-    .terms ul li {
-        font-size: .5rem;
         padding: 5px 10px;
     }
 
@@ -163,4 +121,7 @@ body{
         display: grid;
         grid-template-areas: 'myArea';
     }
+
 }
+
+
