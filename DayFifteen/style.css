@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    place-items: center;
+    background-color: #f8f8f8;
+    margin-top: 15rem;
+    gap: 10px;
+}
+
+.btn button{
+    padding: 10px 40px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: deeppink;
+    color: white;
+    font-weight: 500;
+
+}
