@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKtoiXZoApJeMlv4qakPnWnASeKo5a-Vq1Lw&s") no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+h1{
+    color: white;
+}
+
+.first-input, .second-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    width: 100%;
+    row-gap: 5px;
+}
+
+input {
+    border: none;
+    outline: none;
+    height: 20px;
+    width: 100%;
+}
+
+button {
+    padding: 7px 20px;
+    border: none;
+    background-color: darkviolet;
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+
+}
+
+button:hover {
+    background-color: #9c049c;
+    transition: all .3s ease-in-out;
+}
+
+#result {
+    color: white;
+    font-size: 1.4rem;
+}
