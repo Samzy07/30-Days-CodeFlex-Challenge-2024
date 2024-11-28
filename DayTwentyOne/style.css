@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container {
+    display: grid;
+    row-gap: 10px;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.main-container .form form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+form input {
+    border: none;
+    outline: none;
+    height: 40px;
+    pointer-events: none;
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 10px;
+    background-color: #f5f2f2;
+
+}
+
+form .first-screen {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+form .second-screen {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.buttons {
+    background-color: #1a1919;
+    padding: 10px;
+    border-radius: 10px;
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    height: auto;
+}
+
+
+.buttons .btn {
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    
+}
+
+.buttons .btn-operand {
+    background-color: #8448f3;
+    color: white;
+}
+
+.buttons .btn-operand:hover {
+    background-color: #9561f5;
+    transition: all .2s ease-in-out;
+
+}
+
+.buttons .btn-equal, .btn-clear{
+    background-color: #949191;
+    color: white;
+}
+
+.buttons .btn-equal:hover, .btn-clear:hover {
+    background-color: #b3afaf;
+    transition: all .2s ease-in-out;
+
+}
