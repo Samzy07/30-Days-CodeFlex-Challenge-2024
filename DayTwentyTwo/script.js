@@ -22,6 +22,8 @@ formEl.addEventListener('submit', (e)=>{
 
 
 function errorValidation (e){
+
+    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     
     if (nameEl.value == '' || nameEl.value == null) {
         e.preventDefault()
@@ -36,7 +38,13 @@ function errorValidation (e){
         e.preventDefault()
         emailErr.innerHTML = "Email is Required"
         emailEl.style.border = `1px solid red`
-    } else {
+    } 
+    else if (!emailEl.value.match(re)) {
+        e.preventDefault()
+         emailErr.innerHTML = "Email is invalid"
+         emailEl.style.border = `1px solid red`
+    }
+    else {
         emailErr.innerHTML = ""
         emailEl.style.border = ``
     }
