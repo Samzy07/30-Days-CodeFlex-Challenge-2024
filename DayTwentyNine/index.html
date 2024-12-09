@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEBSITE PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <nav class="nav-bar">
+            <h1><span>SAM</span>ZY</h1>
+            <ul>
+                <li><a href="#header" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><i class="fa-solid fa-bars" onclick="nav-bar()"></i></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="hero-section"> 
+                <div class="name">
+    
+                    <h3>Hi, I'm <span>Suru Samson,</span><br>From Nigeria.</h3>
+                    <p class="career"></p>
+
+                    <div class="social-icon">
+                        <a data-attr="facebook" style="--accent-col: #0026ff;" href="https://www.facebook.com/samson.suru.94" target="_blank" rel="no-referrer no-opener"><i class="fa-brands fa-facebook-f"></i></a>
+
+                        <a data-attr="Twitter" style="--accent-col: #000000;" href="https://x.com/SuruSamson?t=2dyfBfX3p6VqxPJUkbKj5w&s=09" target="_blank" rel="no-referrer no-opener"><i class="fa-brands fa-x-twitter"></i></a>
+
+                        <a data-attr="Instagram" style="--accent-col: #e71755;" href="https://www.instagram.com/surusamson?igsh=MTZueHhzb2M1anhlZw==" target="_blank" rel="no-referrer no-opener"><i class="fa-brands fa-instagram"></i></a>
+
+                        <a data-attr="Linkedin" style="--accent-col: #0026ff;" href="https://www.linkedin.com/in/samson-suru-0941bb1aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="no-referrer no-opener"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>   
+                    <a href="https://drive.usercontent.google.com/u/0/uc?id=1BXAw2Mj_NIqAYxTQ3cKQ0L2CrzC2FtEp&export=download" Download class="download">Download CV <i class="fa-solid fa-file-arrow-down"></i></a>
+                </div>
+                <img src="images/samson.png" alt="" style="height: 550px;">
+            </div>
+        </div>
+    </div>
+
+    <!---------------------- ABOUT SECTION ----------------->
+
+    <div id="about">
+      <div class="container">
+        <div class="about">
+          <div>
+            <img src="images/samson2.jpg" alt="">
+          </div>
+          <div>
+            <h2 class="sub-title">About <span>Me</span></h2>
+            <p>A driven graduate with proficiency in HTML, CSS, Java Script, and Spreadsheets (Microsoft Excel) with passion for programming and science who seeks a position where extensive experience will be further developed and utilized while making a significant contribution to the success of the company</p>
+
+            <div id="tab-content">
+                <div class="tab-title">
+                    <p class="tab-links active" onclick="tab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="tab('Experiences')">Experiences</p>
+                    <p class="tab-links" onclick="tab('Education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Web Developement</span><br>Designing Web/App Interface.</li>
+                        <li><span>Graphics Design</span><br>Designing Flyers, Logos etcs..</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Experiences">
+                    <ul>
+                        <li><span>2024 - current
+                            </span><br>Front-End Developement at TechyJaunt.</li>
+                        <li><span>2016 - 2018
+                            </span><br>Graphics Design Training at Pinions Multimedia.</li>
+                        <li><span>June 2024
+                            </span><br>Internship Program at MindTheGap Foundation.</li>
+                        <li><span>October 2022 - January 2023</span><br>SIWES Program in ICT Department at Ayobo-Ipaja L.C.D.A</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2021 - 2023</span><br>ND at D.S Adegbenro ICT Polytechnic, Itori, Ogun State.</li>
+                        <li><span></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+      <!---------------------- SERVICES SECTION ----------------->
+
+
+      <div id="services">
+        <div class="container">
+            <h2 class="sub-title">Our <span>Services</span></h2>
+            <div class="service">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Developement</h3>
+                    <p>Tailored to your needs, our custom solutions ensure that your website reflects your brand identity while delivering a seamless user experience. Whether it’s a corporate website, a personal portfolio, or an online community, we bring your vision to life.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h3>Graphics Design</h3>
+                    <p>Our graphic design services are tailored to transform your ideas into visually stunning creations that resonate with your brand's identity.From logos to marketing materials, we specialize in delivering designs that are not only eye-catching but also strategically aligned with your business goals.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h3>Digital Marketing</h3>
+                    <p>Our graphic design services are tailored to transform your ideas into visually stunning creations that resonate with your brand's identity.From logos to marketing materials, we specialize in delivering designs that are not only eye-catching but also strategically aligned with your business goals.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+      </div>
+
+        <!---------------------- Portfolio SECTION ----------------->
+
+        <div id="portfolio">
+            <div class="container">
+                <h2 class="sub-title">My <span>Projects</span></h2>
+            <div class="portfolio">
+                <div>
+                    <img src="images/TO-DO-APP.jpg" alt="">
+                    <div class="layer">
+                        <h4>A To-Do App</h4>
+                        <p>The app helps you organize, track, and manage tasks or activities</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="images/calculator.jpg" alt="">
+                   <div class="layer">
+                    <h4>A Calculator App</h4>
+                    <p>The app is designed to help user to perform mathematical operations quickly and accurately</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                   </div>
+                </div>
+
+                <div>
+                    <img src="images/WEATHER-APP.jpg" alt="">
+                  <div class="layer">
+                    <h4>A Weather App</h4>
+                    <p>The app provides real-time information and forecasts about weather conditions, helping users plan their day or activities </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!---------------------- Contact SECTION ----------------->
+
+        <div id="contact">
+            <div class="container">
+                <h2 class="sub-title">Contact <span>Me</span></h2>
+                <div class="contact">
+                    <div class="form">
+                        <form>
+                            <input type="text" type="name" id="name" placeholder="Enter name">
+                            <input type="email" name="email" id="email" placeholder="Enter Email">
+                            <textarea name="textarea" id="textarea" rows="6" placeholder="Message"></textarea>
+                            <button class="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
