@@ -6,18 +6,15 @@ let btnDiv = document.getElementById("btn-box")
 btnDiv.addEventListener('click', btnTodo)
 
 // geting Item-List back to array
-let arrList = JSON.parse(localStorage.getItem("todoTask"))
+let arrList = JSON.parse(localStorage.getItem("todoTask")) || [];
 updateTask()
 
 
-if (!arrList) {
-
-    arrList = []
-
-}
-
-
 addTaskBtn.addEventListener('click', function(e){
+
+    if (!inputEl.value) {
+        return
+    } else {
    e.preventDefault()
    let objTask = {
         taskId: arrList.length + 1,
@@ -31,20 +28,23 @@ addTaskBtn.addEventListener('click', function(e){
      localStorage.setItem("todoTask", JSON.stringify(arrList))
      updateTask()
 
+}
+
 })
+
 
 
 // Creating Ul , Li , Complete, Undo , Delete Element
 function updateTask(){
-
+    arrList;
     ulEl.innerHTML = ""
     inputEl.value = ""
        
-    arrList.forEach((taskName,taskId) => {
+    arrList.map((taskName,taskId)=>{
         
 
         // Updating Status of Items
-    let isCompleted = arrList.status == "completed" ? "active" : "todo"
+    let isCompleted = arrList[taskId].status == "completed" ? "active" : "todo"
 
         let todoDiv = document.createElement("div")
         todoDiv.classList.add("todo")
