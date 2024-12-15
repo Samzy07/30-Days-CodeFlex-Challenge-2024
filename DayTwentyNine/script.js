@@ -17,6 +17,8 @@ function tab(tabName){
 }
 
 
+
+
 const careerEl = document.querySelector(".career")
 
 const careers = ["Web Developer", "Graphics Designer"]
@@ -43,3 +45,60 @@ updateText()
    }
    setTimeout(updateText, 400)
    }
+
+
+   navBars = document.getElementById('ul')
+
+   function openMenu() {
+        navBars.classList.add('removeBar')
+   }
+
+   function closeMenu() {
+    navBars.classList.remove('removeBar')
+   }
+
+
+
+
+
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbw2MaG0ZnAuYMilBWH4bCd477ew0MOr_1bGCEqXk6YC13LSmJ5TRy3a_I212vOxEQDt/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById('msg')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(() => {
+            msg.innerHTML = ''
+        }, 5000);
+        form.reset()
+        })
+      .catch(error => console.error('Error!', error.message))
+    })
+
+
+    
+
+
+    const links = document.querySelectorAll('ul li a')
+    const sections = document.querySelectorAll('section')
+
+    window.onscroll = ()=>{
+        sections.forEach(sec => {
+            let top = window.scrollY;
+            let offset = sec.offsetTop;
+            let height = sec.offsetHeight;
+            let id = sec.getAttribute('id');
+
+            if(top >= offset && top < offset + height){
+                links.forEach(link => {
+                    link.classList.remove('active')
+                    document.querySelector('ul li a[href*=' + id + ']').classList.add('active')
+                } )
+            }
+        })
+        closeMenu()
+      
+    }

@@ -8,18 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div id="header">
+    <section id="header">
         <nav class="nav-bar">
             <h1><span>SAM</span>ZY</h1>
-            <ul>
+            <ul id="ul">
                 <li><a href="#header" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Service</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><i class="fa-solid fa-bars" onclick="nav-bar()"></i></li>
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
         </nav>
+
         <div class="container">
             <div class="hero-section"> 
                 <div class="name">
@@ -38,14 +40,14 @@
                     </div>   
                     <a href="https://drive.usercontent.google.com/u/0/uc?id=1BXAw2Mj_NIqAYxTQ3cKQ0L2CrzC2FtEp&export=download" Download class="download">Download CV <i class="fa-solid fa-file-arrow-down"></i></a>
                 </div>
-                <img src="images/samson.png" alt="" style="height: 550px;">
+                <img src="images/samson.png" alt="" style="height: 550px;" class="image">
             </div>
         </div>
-    </div>
+    </section>
 
     <!---------------------- ABOUT SECTION ----------------->
 
-    <div id="about">
+    <section id="about">
       <div class="container">
         <div class="about">
           <div>
@@ -91,14 +93,14 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
 
 
       <!---------------------- SERVICES SECTION ----------------->
 
 
-      <div id="services">
+      <section id="services">
         <div class="container">
             <h2 class="sub-title">Our <span>Services</span></h2>
             <div class="service">
@@ -117,18 +119,18 @@
                 </div>
 
                 <div>
-                    <i class="fa-solid fa-pen-nib"></i>
+                    <i class="fa-brands fa-digital-ocean"></i>
                     <h3>Digital Marketing</h3>
                     <p>Our graphic design services are tailored to transform your ideas into visually stunning creations that resonate with your brand's identity.From logos to marketing materials, we specialize in delivering designs that are not only eye-catching but also strategically aligned with your business goals.</p>
                     <a href="#">Learn more</a>
                 </div>
             </div>
         </div>
-      </div>
+      </section>
 
         <!---------------------- Portfolio SECTION ----------------->
 
-        <div id="portfolio">
+        <section id="portfolio">
             <div class="container">
                 <h2 class="sub-title">My <span>Projects</span></h2>
             <div class="portfolio">
@@ -137,7 +139,7 @@
                     <div class="layer">
                         <h4>A To-Do App</h4>
                         <p>The app helps you organize, track, and manage tasks or activities</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="https://to-do-app-tau-ten.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
 
@@ -146,7 +148,7 @@
                    <div class="layer">
                     <h4>A Calculator App</h4>
                     <p>The app is designed to help user to perform mathematical operations quickly and accurately</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://calculator-one-kappa-15.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                    </div>
                 </div>
 
@@ -155,30 +157,33 @@
                   <div class="layer">
                     <h4>A Weather App</h4>
                     <p>The app provides real-time information and forecasts about weather conditions, helping users plan their day or activities </p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://weather-app-psi-nine-78.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                   </div>
                 </div>
             </div>
         </div>
-        </div>
+        </section>
 
         <!---------------------- Contact SECTION ----------------->
 
-        <div id="contact">
+        <section id="contact">
             <div class="container">
                 <h2 class="sub-title">Contact <span>Me</span></h2>
                 <div class="contact">
                     <div class="form">
-                        <form>
-                            <input type="text" type="name" id="name" placeholder="Enter name">
-                            <input type="email" name="email" id="email" placeholder="Enter Email">
-                            <textarea name="textarea" id="textarea" rows="6" placeholder="Message"></textarea>
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" id="name" placeholder="Enter name">
+                            <input type="email" name="Email" id="email" placeholder="Enter Email">
+                            <textarea name="Message" id="textarea" rows="6" placeholder="Message"></textarea>
                             <button class="btn">Submit</button>
                         </form>
                     </div>
+                    <div id="msg">
+                
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     
     <script src="script.js"></script>
 </body>

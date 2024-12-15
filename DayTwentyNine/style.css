@@ -22,13 +22,13 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 50px;
+    overflow-x: hidden;
 }
 
  #about, #services, #portfolio, #contact {
     min-height: 100vh;
     display: grid;
     align-items: center;
-    
 }
 
 #header .nav-bar {
@@ -56,7 +56,7 @@ nav ul {
     list-style: none;
     text-decoration: none;
 }
-nav ul .fa-bars {
+nav .fa-solid {
     display: none;
 }
 
@@ -103,6 +103,7 @@ nav ul li a:hover::after {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100vh;
     
 }
 
@@ -132,7 +133,7 @@ nav ul li a:hover::after {
     color: var(--thirdTextColor);
     border-radius: 100%;
     border: 1px solid var(--textColor);
-    padding: 12px;
+    padding: 15px;
     height: 20px;
     width: 20px;
     display: flex;
@@ -339,8 +340,7 @@ nav ul li a:hover::after {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    text-align: center;
-   
+    text-align: center; 
   
 }
 
@@ -438,6 +438,86 @@ div .layer a {
 
 form .btn:hover {
     border: none;
-    background-color: var(--textColor);
+    background-color: var(--secTextColor);
 }
 
+.removeBar {
+    right: 0;
+}
+
+#msg {
+    color: rgba(11, 255, 11, 0.856);
+}
+
+
+/**********  Responsive screen ****************/
+
+@media only screen and (max-width: 900px) {
+   
+    nav ul {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        right: -500px;
+        top: 0;
+        border-bottom-left-radius: 5px;
+        background-color: var(--secTextColor);
+        padding: 30px 40px;
+        width: 40%;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        margin-top: 20px;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    .nav-bar ul .fa-solid {
+        position: absolute;
+        right: 20%;
+    }
+
+    .hero-section img {
+       position: absolute;
+       right: -150px;
+    
+    }
+
+    .hero-section .name h3 {
+        font-size: 1.5rem;
+    }
+
+    .sub-title {
+        font-size: 2rem;
+    }
+
+    .about, .service, .portfolio {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+
+    }
+
+    .about div img {
+        height: 300px;
+    }
+
+    .service, .portfolio {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .contact .form form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        width: 25rem;
+        
+    }
+}
